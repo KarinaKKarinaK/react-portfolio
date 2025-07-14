@@ -22,19 +22,4 @@ export const HeroSection = () => {
       </div>
     </section>
   );
-
-  {
-    /* About Section */
-  }
-  <section id="about" className="py-20">
-    <div className="container mx-auto px-6">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        About Me
-      </h2>
-      <p className="text-lg text-center text-foreground/80 max-w-3xl mx-auto">
-        Welcome to my portfolio! I'm a developer passionate about creating
-        innovative solutions and beautiful user experiences.
-      </p>
-    </div>
-  </section>;
 };
