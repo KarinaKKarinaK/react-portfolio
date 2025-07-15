@@ -1,3 +1,6 @@
+import { Code, User, Briefcase } from "lucide-react";
+
+
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
@@ -29,7 +32,30 @@ export const AboutSection = () => {
                     {" "}
                     Get In Touch
                 </a>
+            </div>
+          </div>
 
+          <div className="grid grid-cols-1 gap-6">
+            <div className="gradient-border p-6 card-hover">
+                <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                        <Code className="h-6 w-6 text-primary"/>
+                    </div>
+                </div>
+            </div>
+            <div className="gradient-border p-6 card-hover">
+                 <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                        <User className="h-6 w-6 text-primary"/>
+                    </div>
+                </div>
+            </div>
+            <div className="gradient-border p-6 card-hover">
+                 <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                        <Briefcase className="h-6 w-6 text-primary"/>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
