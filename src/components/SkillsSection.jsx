@@ -78,7 +78,7 @@ export const SkillsSection = () => {
                 </div>
                 <div className="relative w-full h-3 rounded-full overflow-hidden">
                 {/* Background bar (100% filled) */}
-                <div className="absolute inset-0 bg-secondary/40 dark:bg-secondary/30 rounded-full" />
+                <div className="absolute inset-0 bg-slate-600/60 dark:bg-slate-700/80 rounded-full" />
                 {/* Progress bar */}
                 <div
                     className="absolute inset-y-0 left-0 bg-primary rounded-full origin-left animate-[grow_1.5s_ease-out]"
