@@ -1,5 +1,4 @@
-import { Code, User, Briefcase } from "lucide-react";
-
+import { Code, User, Bot } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -28,34 +27,56 @@ export const AboutSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <a href="#contact" className="cosmic-button">
-                    {" "}
-                    Get In Touch
-                </a>
+              <a href="#contact" className="cosmic-button">
+                {" "}
+                Get In Touch
+              </a>
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-6">
             <div className="gradient-border p-6 card-hover">
-                <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                        <Code className="h-6 w-6 text-primary"/>
-                    </div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Code className="h-6 w-6 text-primary" />
                 </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <p className="text-muted-foreground">
+                    {" "}
+                    Designing sleek, scalable websites and web apps using modern
+                    frameworks.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="gradient-border p-6 card-hover">
-                 <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                        <User className="h-6 w-6 text-primary"/>
-                    </div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <User className="h-6 w-6 text-primary" />
                 </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">User Experience</h4>
+                  <p className="text-muted-foreground">
+                    {" "}
+                    Providing human-centered design with performance in mind.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="gradient-border p-6 card-hover">
-                 <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                        <Briefcase className="h-6 w-6 text-primary"/>
-                    </div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Bot className="h-6 w-6 text-primary" />
                 </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">AI Solutions</h4>
+                  <p className="text-muted-foreground">
+                    {" "}
+                    Building intelligent systems powered by AI agents & automation.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
