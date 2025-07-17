@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     title: "Portfolio Website",
     description: "Modern portfolio site with animations and dark mode.",
-    image: "/projects/project4.png",
+    image: "/projects/project7.png",
     tags: ["HTML, CSS", "JavaScript"],
     demoUrl:
       "https://github.com/KarinaKKarinaK/react-portfolio?tab=readme-ov-file",
@@ -113,7 +113,7 @@ export const ProjectsSection = () => {
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
-                <img src={projects.image} alt={projects.title}></img>
+                <img src={projects.image} alt={projects.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
               </div>
 
             </div>
