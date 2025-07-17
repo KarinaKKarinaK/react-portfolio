@@ -1,21 +1,12 @@
 const projects = [
     {
-    id: 2,
+    id: 1,
     title: "Chess With Stockfish Engine",
     description: "A Python chess game with a GUI using Pygame and Stockfish engine integration.",
     image: "/projects/project23.png",
     tags: ["Python", "Pygame", "Stockfish"],
     demoUrl: "https://github.com/KarinaKKarinaK/ChessWithEngine/blob/main/assets/images/project23.png",
     githubUrl: "https://github.com/KarinaKKarinaK/ChessWithEngine"
-  },
-  {
-    id: 1,
-    title: "Portfolio Website",
-    description: "A hacker-inspired portfolio website with a unique design.",
-    image: "/projects/project1.png",
-    tags: ["HTML", "CSS"],
-    demoUrl: "#",
-    githubUrl: "#",
   },
   {
     id: 2,
@@ -32,18 +23,27 @@ const projects = [
     description: "Modern portfolio site with animations and dark mode.",
     image: "/projects/project4.png",
     tags: ["HTML, CSS", "JavaScript"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://github.com/KarinaKKarinaK/react-portfolio?tab=readme-ov-file",
+    githubUrl: "https://github.com/KarinaKKarinaK/personal-portfolio/tree/main/portfolio",
   },
   {
     id: 2,
-    title: "Interactive AI-Powered SPanish Learning App",
+    title: "Interactive AI-Powered Spanish Learning App",
     description: "A Spanish learning app built with Python, Streamlit, and OpenAI API. Includes login, chat, speech tools, and language AI helpers.",
     image: "/projects/project24.png",
     tags: ["Python", "Streamlit", "OpenAI", "SQLite", "gTTS"],
     demoUrl: "https://github.com/KarinaKKarinaK/SpanishApp",
     githubUrl: "https://github.com/KarinaKKarinaK/SpanishApp"
-},
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    description: "A hacker-inspired portfolio website with a unique design.",
+    image: "/projects/project25.png",
+    tags: ["Vite", "TailwindCSS","JavaScript","HTML", "CSS"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
   {
     id: 7,
     title: "SaaS Website",
@@ -85,7 +85,10 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section id="projects" className="py-24 px-4 relative">
+        <div className="container mx-auto max-w-5xl">
+            <h2></h2>
+        </div>
     </section>
   );
 };
