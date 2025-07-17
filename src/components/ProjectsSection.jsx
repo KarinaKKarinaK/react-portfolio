@@ -85,10 +85,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
-        <div className="container mx-auto max-w-5xl">
-            <h2></h2>
-        </div>
+    <section className="py-16 bg-background">
     </section>
   );
 };
