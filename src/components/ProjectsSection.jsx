@@ -34,9 +34,9 @@ const projects = [
   },
   {
     id: 4,
-    title: "Interactive AI-Powered Spanish Learning App",
+    title: "AI-Powered Learning App",
     description:
-      "A Spanish learning app built with Python, Streamlit, and OpenAI API. Includes login, chat, speech tools, and language AI helpers.",
+      "AI-powered app for learning Spanish - with login, chat, speech tools, and AI features.",
     image: "/projects/project24.png",
     tags: ["Python", "OpenAI", "SQLite"],
     demoUrl: "https://github.com/KarinaKKarinaK/SpanishApp",
@@ -123,12 +123,15 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {projects.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">
+                    <span className="px-2 py-1 text-xs font-medium rounded-full bg-primary/20 text-secondary-foreground">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
+
+              <h3 className="text-xl font-semibold mb-2">{projects.title}</h3>
+              <p className="text-muted-foreground text-sm mb-4">{projects.description}</p>
             </div>
           ))}
         </div>
