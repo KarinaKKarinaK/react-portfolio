@@ -149,6 +149,11 @@ export const ProjectsSection = () => {
             </div>
           ))}
         </div>
+        <div className="text-center mt-12">
+          <a>
+            Check My GitHub
+          </a>
+        </div>
       </div>
     </section>
   );
