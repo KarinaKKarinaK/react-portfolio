@@ -96,7 +96,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section id="projects" className="py-16 bg-background">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           {" "}
@@ -157,7 +157,11 @@ export const ProjectsSection = () => {
           ))}
         </div>
         <div className="text-center mt-12">
-          <a className="cosmic-button w-fit flex items-center mx-auto gap-2">
+          <a
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+            href="https://github.com/KarinaKKarinaK"
+          >
             Check My GitHub <ArrowRight size={16} />
           </a>
         </div>
