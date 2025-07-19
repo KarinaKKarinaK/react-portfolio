@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const projects = [
   {
@@ -130,28 +130,35 @@ export const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
-                 <h3 className="text-xl font-semibold mb-2">{projects.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{projects.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{projects.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">
+                  {projects.description}
+                </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a href={projects.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                      <ExternalLink size={20}/>
+                    <a
+                      href={projects.demoUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
                     </a>
-                    <a href={projects.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                      <Github size={20}/>
+                    <a
+                      href={projects.githubUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
                     </a>
                   </div>
-
                 </div>
               </div>
-
-             
             </div>
           ))}
         </div>
         <div className="text-center mt-12">
-          <a>
-            Check My GitHub
+          <a className="cosmic-button w-fit flex items-center mx-ato">
+            Check My GitHub <ArrowRight size={16} />
           </a>
         </div>
       </div>
