@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 export const ContactSection = () => {
   return (
@@ -62,12 +62,26 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground">
+                  <a className="text-muted-foreground hover:text-primary transition-colors">
                     Amsterdam, Netherlands
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
+
+            <div className="pt-8">
+                <h4 className="font-medium mb-4">Connect With Me</h4>
+                <div className="flex space-x-4 justify-center">
+                    <a href="https://www.linkedin.com/in/karina-kalicka-molin-52193a280/" c>
+                        <Linkedin className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
+                    </a>
+                    <a href="https://github.com/KarinaKKarinaK" target="_blank">
+                        <Github className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
+                    </a>
+                </div>
+
+            </div>
+
           </div>
         </div>
       </div>
