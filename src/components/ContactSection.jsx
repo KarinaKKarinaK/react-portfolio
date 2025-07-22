@@ -54,20 +54,20 @@ export const ContactSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">
+            <h3 className="text-2xl font-semibold mb-8 text-left">
               More Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
+            <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
+                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium">Email</h4>
+                <div className="flex-1">
+                  <h4 className="font-medium text-foreground mb-1">Email</h4>
                   <a
                     href="mailto:karinakalicka@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors break-all"
                   >
                     karinakalicka@gmail.com
                   </a>
@@ -75,11 +75,11 @@ export const ContactSection = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
+                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium">Phone</h4>
+                <div className="flex-1">
+                  <h4 className="font-medium text-foreground mb-1">Phone</h4>
                   <a
                     href="tel:+310631329509"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -90,28 +90,35 @@ export const ContactSection = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
+                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium">Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex-1">
+                  <h4 className="font-medium text-foreground mb-1">Location</h4>
+                  <span className="text-muted-foreground">
                     Amsterdam, Netherlands
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
 
-            <div className="pt-8">
-              <h4 className="font-medium mb-4">Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
+            <div className="pt-8 border-t border-border/50">
+              <h4 className="font-medium mb-6 text-left">Connect With Me</h4>
+              <div className="flex space-x-4">
                 <a
                   href="https://www.linkedin.com/in/karina-kalicka-molin-52193a280/"
-                  c
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
                 >
                   <Linkedin className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
                 </a>
-                <a href="https://github.com/KarinaKKarinaK" target="_blank">
+                <a 
+                  href="https://github.com/KarinaKKarinaK" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+                >
                   <Github className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
                 </a>
               </div>
