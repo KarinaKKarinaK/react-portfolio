@@ -70,15 +70,18 @@ export const ContactSection = () => {
             </div>
 
             <div className="pt-8">
-                <h4 className="font-medium mb-4">Connect With Me</h4>
-                <div className="flex space-x-4 justify-center">
-                    <a href="https://www.linkedin.com/in/karina-kalicka-molin-52193a280/" c>
-                        <Linkedin className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
-                    </a>
-                    <a href="https://github.com/KarinaKKarinaK" target="_blank">
-                        <Github className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
-                    </a>
-                </div>
+              <h4 className="font-medium mb-4">Connect With Me</h4>
+              <div className="flex space-x-4 justify-center">
+                <a
+                  href="https://www.linkedin.com/in/karina-kalicka-molin-52193a280/"
+                  c
+                >
+                  <Linkedin className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
+                </a>
+                <a href="https://github.com/KarinaKKarinaK" target="_blank">
+                  <Github className="h-6 w-6 text-primary hover:text-primary/80 transition-colors" />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -86,17 +89,62 @@ export const ContactSection = () => {
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
             <form className="space-y-6">
-                <div>
-                    <label htmlFor="name">Your Name</label>
-                    <input type="text" id="name" name="name" required className="mt-1 block w-full border border-muted-foreground rounded-md p-2" />
-                </div>
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  placeholder="John Wallace"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  placeholder="john.wallace@example.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
+                  {" "}
+                  Your Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                  placeholder="Hello, I would like to discuss..."
+                />
+              </div>
+
             </form>
-
           </div>
-
-
         </div>
-
       </div>
     </section>
   );
