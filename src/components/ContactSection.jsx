@@ -14,12 +14,12 @@ export const ContactSection = () => {
     setSubmitStatus(null);
 
     try {
-      // Replace these with your actual EmailJS credentials
+      // Using environment variables for EmailJS credentials
       const result = await emailjs.sendForm(
-        'YOUR_SERVICE_ID',     // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID',    // Replace with your EmailJS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        'YOUR_PUBLIC_KEY'      // Replace with your EmailJS public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       console.log('Email sent successfully:', result.text);
@@ -123,13 +123,13 @@ export const ContactSection = () => {
 
             {submitStatus === 'success' && (
               <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-green-600 dark:text-green-400">
-                ✅ Message sent successfully! I'll get back to you soon.
+                Message sent successfully! I'll get back to you soon.
               </div>
             )}
 
             {submitStatus === 'error' && (
               <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-lg text-red-600 dark:text-red-400">
-                ❌ Failed to send message. Please try again or contact me directly via email.
+                Failed to send message. Please try again or contact me directly via email.
               </div>
             )}
 
