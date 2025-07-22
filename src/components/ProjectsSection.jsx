@@ -23,19 +23,19 @@ const projects = [
       "https://github.com/KarinaKKarinaK/expense-tracker/blob/main/screenshots/Screenshot%202025-06-26%20at%2017.32.05.png",
     githubUrl: "https://github.com/KarinaKKarinaK/expense-tracker",
   },
+  // {
+  //   id: 3,
+  //   title: "Portfolio Website",
+  //   description: "Modern portfolio site with animations and dark mode.",
+  //   image: "/projects/project7.png",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   demoUrl:
+  //     "https://github.com/KarinaKKarinaK/react-portfolio?tab=readme-ov-file",
+  //   githubUrl:
+  //     "https://github.com/KarinaKKarinaK/personal-portfolio/tree/main/portfolio",
+  // },
   {
     id: 3,
-    title: "Portfolio Website",
-    description: "Modern portfolio site with animations and dark mode.",
-    image: "/projects/project7.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demoUrl:
-      "https://github.com/KarinaKKarinaK/react-portfolio?tab=readme-ov-file",
-    githubUrl:
-      "https://github.com/KarinaKKarinaK/personal-portfolio/tree/main/portfolio",
-  },
-  {
-    id: 4,
     title: "AI-Powered Learning App",
     description:
       "AI-powered app for learning Spanish - with login, chat, speech tools, and AI features.",
@@ -44,54 +44,54 @@ const projects = [
     demoUrl: "https://github.com/KarinaKKarinaK/SpanishApp",
     githubUrl: "https://github.com/KarinaKKarinaK/SpanishApp",
   },
-  {
-    id: 5,
-    title: "Portfolio Website",
-    description: "A hacker-inspired portfolio website with a unique design.",
-    image: "/projects/project25.png",
-    tags: ["Vite", "TailwindCSS", "JavaScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 6,
-    title: "SaaS Website",
-    description: "Landing page with testimonials and animations.",
-    image: "/projects/project13.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 7,
-    title: "Dashboard UI",
-    description: "Analytics dashboard with graphs and responsive layout.",
-    image: "/projects/project16.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 8,
-    title: "Quiz Game",
-    description:
-      "Interactive quiz web app with instant feedback and progress tracking.",
-    image: "/projects/project4.png",
-    tags: ["JavaScript", "CSS", "HTML"],
-    demoUrl:
-      "https://github.com/KarinaKKarinaK/quiz-game/blob/main/screenshots/Screenshot%202025-06-26%20at%200.30.09.png",
-    githubUrl: "https://github.com/KarinaKKarinaK/quiz-game",
-  },
-  {
-    id: 9,
-    title: "Digital Business Card",
-    description: "Digital business card using dummy data and animations.",
-    image: "/projects/project19.png",
-    tags: ["HTML", "CSS"],
-    demoUrl: "#",
-    githubUrl:
-      "https://github.com/KarinaKKarinaK/html_business_card?tab=readme-ov-file",
-  },
+  // {
+  //   id: 5,
+  //   title: "Portfolio Website",
+  //   description: "A hacker-inspired portfolio website with a unique design.",
+  //   image: "/projects/project25.png",
+  //   tags: ["Vite", "TailwindCSS", "JavaScript"],
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  // },
+  // {
+  //   id: 6,
+  //   title: "SaaS Website",
+  //   description: "Landing page with testimonials and animations.",
+  //   image: "/projects/project13.png",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Dashboard UI",
+  //   description: "Analytics dashboard with graphs and responsive layout.",
+  //   image: "/projects/project16.png",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Quiz Game",
+  //   description:
+  //     "Interactive quiz web app with instant feedback and progress tracking.",
+  //   image: "/projects/project4.png",
+  //   tags: ["JavaScript", "CSS", "HTML"],
+  //   demoUrl:
+  //     "https://github.com/KarinaKKarinaK/quiz-game/blob/main/screenshots/Screenshot%202025-06-26%20at%200.30.09.png",
+  //   githubUrl: "https://github.com/KarinaKKarinaK/quiz-game",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Digital Business Card",
+  //   description: "Digital business card using dummy data and animations.",
+  //   image: "/projects/project19.png",
+  //   tags: ["HTML", "CSS"],
+  //   demoUrl: "#",
+  //   githubUrl:
+  //     "https://github.com/KarinaKKarinaK/html_business_card?tab=readme-ov-file",
+  // },
 ];
 
 export const ProjectsSection = () => {
